@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgba(229, 229, 229, 0.95);
+    width: 300px;
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+}
+
+.sidebar nav {
+    padding: 40px;
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 22px;
+    padding: 20px 0;
+
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 85vw;
+
+}
+
+.container {
+    display: flex;
+}
+
+.info {
+    /* background-color: green; */
+    height: 70vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 114px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.devPic img {
+    height: 70vh;
+
+}
+
+.hello {
+    font-size: 40px;
+}
+
+.name {
+    font-size: 53px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 30px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.moreabout {
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 22px;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.buttons button {
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 15px;
+    padding: 9px 14px;
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+
+.buttons button:hover {
+    color: dodgerblue;
+    background-color: white;
+}
+
+/* contactPart */
+.contactform {
+    padding: 0 40px;
+    padding-top: 51px;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.contactform h1 {
+    font-family: 'Mulish', sans-serif;
+    text-align: start;
+    padding: 10px 0;
+}
+
+.contactform form div {
+    padding: 10px 0;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactform form div input {
+    width: 20vw;
+    padding: 4px;
+    border-radius: 7px;
+    margin: 5px 0 0 0;
+
+}
+
+.contactform form button {
+    padding: 3px 10px;
+    border-radius: 7px;
+    font-size: 12px;
+    color: white;
+    background-color: dodgerblue;
+
+}
+
+.contactform form button:hover {
+    color: dodgerblue;
+    background-color: white;
+
+}
+
+#emailHelp {
+    font-size: 8px;
+    color: midnightblue;
+    padding: 5px 0 0 0;
+}
+
+#form-check {
+    flex-direction: row;
+
+}
+
+#form-check input {
+    width: 18px;
+    margin: 3px 0;
+}
+
+/* projectPart */
+#projects {
+    padding: 50px 0;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff7200);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    color: white;
+
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff7200;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.containerp {
+    padding: 40px 10px;
+
+}
+
+/* skillspart */
+#skills {
+    margin-left: 30px;
+    /* padding: 30px 0; */
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.skill-list div {
+    background: #262626;
+    padding: 25px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.skill-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.skill-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.skill-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.skill-list div:hover {
+    background-color: #ff7200;
+    transform: translateY(-10px);
+}
+
+.containers {
+
+
+    padding: 10px 10px;
+
+}
+
+/* intropart */
+
+#about {
+    padding: 40px 20px;
+    color: #000000;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column1 {
+    flex-basis: 35%;
+}
+
+.column1 img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.column2 {
+    flex-basis: 60%;
+}
+
+.sub-txt {
+    /* padding-bottom: 20px; */
+    font-family: "Times New Roman";
+    font-size: 60px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.tab-title {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #ff7200;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-content ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-content ul li span {
+    color: #ff7200;
+    font-size: 14px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+.code-icons {
+    margin-top: 10px;
+}
+
+.code-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Arial";
+    font-weight: bold;
+    margin-right: 18px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.code-icons a:hover {
+    /* color: #ff004f; */
+    color: #ff7200;
+    transform: translateY(-5px);
+}
+
+/* certificatepart */
+
+* {
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    width: 65%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlide {
+    display: none;
+}
+
+
+.pre,
+.nxt {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    /* margin-top: -22px; */
+    padding: 16px;
+    color: rgb(120, 120, 120);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.nxt {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.pre:hover,
+.nxt:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.imageTxt {
+    color: #ffffff;
+    background-color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numberTxt {
+    color: #030303;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: relative;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+    /* color: #ff7200; */
+    background-color: #ff7200;
+    /* background-color: #717171; */
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
